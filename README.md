@@ -6,11 +6,11 @@ This project aims to solve the 8 queens problem with and without obstacles using
 
 + 運用基因演算法 (Genetic Algorithm) 找出八皇后問題的其中一解。
 Use genetic algorithm (Genetic Algorithm) to find one of the solutions to the 8 queens problem.
-![Genetic_1](https://hackmd.io/_uploads/SJX3qhMSh.png)　![Genetic_2](https://hackmd.io/_uploads/SkAYc3fSn.png)
+![Genetic_1](https://github.com/tana0101/8-queen-problem/blob/main/src/c_1.png?raw=true)　![Genetic_2](https://github.com/tana0101/8-queen-problem/blob/main/src/c_2.png?raw=true)
 
 + 解決有障礙物的八皇后問題（障礙物以城堡代替）。
 Solve the 8 queens problem with obstacles (obstacles are replaced by castles).
-![obstacles_1](https://hackmd.io/_uploads/r1ZOq2XHn.png)　![obstacles_2](https://hackmd.io/_uploads/Bkli52XS3.png)
+![obstacles_1](https://github.com/tana0101/8-queen-problem/blob/main/src/c_3.png?raw=true)　![obstacles_2](https://github.com/tana0101/8-queen-problem/blob/main/src/c_4.png?raw=true)
 
 
 
