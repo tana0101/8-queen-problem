@@ -5,7 +5,7 @@
 This project aims to solve the 8 queens problem with and without obstacles using different algorithms and observe the results.
 
 + 運用基因演算法 (Genetic Algorithm) 找出八皇后問題的其中一解。
-Use genetic algorithm (Genetic Algorithm) to find one of the solutions to the 8 queens problem.
+Use genetic algorithm (Genetic Algorithm) to find one of the solutions to the 8 queens problem.<br>
 <img src="https://github.com/tana0101/8-queen-problem/blob/main/src/c_1.png?raw=true" alt="Image" style="width:250px;"> <img src="https://github.com/tana0101/8-queen-problem/blob/main/src/c_2.png?raw=true" alt="Image" style="width:300px;">
 
 + 解決有障礙物的八皇后問題（障礙物以城堡代替）。
