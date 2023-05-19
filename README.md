@@ -3,6 +3,8 @@
 * hackmd: https://hackmd.io/@tana0101/ai_lab4
 * github: https://github.com/tana0101/8-queen-problem.git
 
+## Summary
+
 此專案的目的是使用不同的演算法解決一般與有障礙物的八皇后問題，並觀察其結果。
 
 This project aims to solve the 8 queens problem with and without obstacles using different algorithms and observe the results.
