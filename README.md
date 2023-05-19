@@ -1,5 +1,8 @@
 # 8 queens problem
 
+hackmd: https://hackmd.io/@tana0101/ai_lab4
+github: https://github.com/tana0101/8-queen-problem.git
+
 此專案的目的是使用不同的演算法解決一般與有障礙物的八皇后問題，並觀察其結果。
 
 This project aims to solve the 8 queens problem with and without obstacles using different algorithms and observe the results.
@@ -35,6 +38,21 @@ This will install all the necessary packages for this project.
 
 ## Usage
 
+```bash
+>python 8queen.py -h
+usage: 8queen.py [-h] [--dfs] [--bfs] [--setRandRock] [--setRock SETROCK] [--setFen FEN]
+
+Solve the eight queens problem.
+
+options:
+  -h, --help         show this help message and exit
+  --dfs              Use depth-first search to solve the problem
+  --bfs              Use breadth-first search to solve the problem
+  --setRandRock      Set random rock on the board
+  --setRock SETROCK  Set the number of rock on the board
+  --setFen FEN       Set fen on the board
+```
+
 + 執行dfs, bfs演算法找出八皇后問題的所有解：
 ```bash
 python 8queen.py --dfs
@@ -44,12 +62,19 @@ python 8queen.py --bfs
 
 + 執行dfs, bfs演算法找出有障礙物的八皇后問題的所有解：
 ```bash
-python 8queen.py --dfs --setRock
-python 8queen.py --bfs --setRock
+python 8queen.py --dfs --setRandRock
+python 8queen.py --bfs --setRandRock
 ```
 注意：Rock的位置是隨機產生的，每次執行程式都會不一樣。
 
-+ 執行dfs, bfs演算法找出以fen設置有障礙物棋盤的八皇后問題的所有解：
++ 執行dfs, bfs演算法找出有障礙物的八皇后問題的所有解，障礙物數量由setRock設置：
+```bash
+python 8queen.py --dfs --setRock 障礙物數量
+python 8queen.py --dfs --setRock 10
+```
+
++ 執行dfs, bfs演算法找出有障礙物的八皇后問題的所有解，障礙物位置由fen設置：
+```bash
 ```bash
 python 8queen.py --dfs --setFen "棋盤fen"
 python 8queen.py --dfs --setFen "8/3R4/8/8/3R4/5R2/8/8 w - - 0 1"
@@ -75,15 +100,15 @@ Note: You must choose one algorithm.
 
 + Run dfs, bfs algorithm to find all solutions to the 8 queens problem with obstacles:
 ```bash
-python 8queen.py --dfs --setRock
-python 8queen.py --bfs --setRock
+python 8queen.py --dfs --setRandRock
+python 8queen.py --bfs --setRandRock
 ```
-Note: The position of Rock is randomly generated and will be different each time the program is run.        
+Note: The position of the Rock is randomly generated and will be different each time the program is run.
 
-+ Run dfs, bfs algorithm to find all solutions to the 8 queens problem with obstacles set by fen:
++ Run dfs, bfs algorithm to find all solutions to the 8 queens problem with obstacles, the number of obstacles is set by setRock:
 ```bash
-python 8queen.py --dfs --setFen "棋盤fen"
-python 8queen.py --dfs --setFen "8/3R4/8/8/3R4/5R2/8/8 w - - 0 1"
+python 8queen.py --dfs --setRock number of obstacles
+python 8queen.py --dfs --setRock 10
 ```
 Note: The chessboard fen can be generated with [this website](https://lichess.org/editor), and the obstacle ROCK is replaced by the castle, you can refer to [example](https://lichess.org/editor/8/3R4/8/8/3R4/5R2/8/8_w_-_-_0_1?color=white).
 

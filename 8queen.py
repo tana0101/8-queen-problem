@@ -146,11 +146,14 @@ def bfs(board, solutions):
                 q.put((new_board, curr_row+1))
 
 if __name__ == "__main__":
-    # 透過參數選擇使用的演算法
+    
     parser = argparse.ArgumentParser(description='Solve the eight queens problem.')
+    # 透過參數選擇使用的演算法
     parser.add_argument('--dfs', dest='dfs', action='store_true', help='Use depth-first search to solve the problem')
     parser.add_argument('--bfs', dest='bfs', action='store_true', help='Use breadth-first search to solve the problem')
-    parser.add_argument('--setRock', dest='setRock', action='store_true', help='Set rock on the board')
+    # 透過參數設置棋盤的障礙物
+    parser.add_argument('--setRandRock', dest='setRandRock', action='store_true', help='Set random rock on the board')
+    parser.add_argument('--setRock', dest='setRock', type=int, help='Set the number of rock on the board')
     parser.add_argument('--setFen', dest='fen', type=str, help='Set fen on the board')
     args = parser.parse_args()
 
@@ -160,10 +163,20 @@ if __name__ == "__main__":
     solutions = []
 
     # 隨機設置石頭
-    if args.setRock:
+    if args.setRandRock:
         # 隨機產生石頭的位置
         rock_num = random.randint(1, 8)
         rock_pos = random.sample(range(64), rock_num)
+        for pos in rock_pos:
+            board.set_piece_at(pos, chess.Piece(chess.ROOK, chess.WHITE))
+        print("rock:")
+        print(board)
+        print()
+
+    # 設置固定數量的石頭
+    if args.setRock:
+        # 產生石頭的位置
+        rock_pos = random.sample(range(64), args.setRock)
         for pos in rock_pos:
             board.set_piece_at(pos, chess.Piece(chess.ROOK, chess.WHITE))
         print("rock:")
