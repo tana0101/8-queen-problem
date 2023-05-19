@@ -4,8 +4,8 @@
 作者：林一
 系級：資工3B
 學號：00957101
-hackmd: https://hackmd.io/@tana0101/ai_lab4
-github: https://github.com/tana0101/8-queen-problem.git
+* hackmd: https://hackmd.io/@tana0101/ai_lab4
+* github: https://github.com/tana0101/8-queen-problem.git
 
 ## 實驗內容描述：
 **使用不同的演算法解決一般與有障礙物的八皇后問題，並觀察其結果。**
